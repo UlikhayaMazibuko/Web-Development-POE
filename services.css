@@ -1,0 +1,177 @@
+/* Body styling */
+body {                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #222; 
+  padding: 1rem 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #e10600; 
+  color: #fff;
+}
+
+header nav a.active {
+  background-color: #e10600;
+  color: #fff;
+}
+
+/* Services Section */
+.services {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.services p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+/* Service Categories */
+.service-category {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin: 2rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.service-category h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #e10600; /* Signature red accent */
+  font-weight: 700;
+}
+
+.service-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-category ul li {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.service-category ul li::before {
+  content: "✓";
+  color: #e10600;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Products Section */
+#products {
+  background: #fafafa; /* softer contrast from white cards */
+  border-left: 5px solid #e10600;
+}
+
+#products p {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Special Packages Section */
+#bridal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#bridal ul li {
+  background: #fef6f6; 
+  border: 1px solid #f2dcdc;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.5;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#bridal ul li:hover {
+  transform: translateX(5px);
+  background-color: #fdeaea;
+}
+
+#bridal ul li strong {
+  color: #e10600;
+}
+
+/* === Footer === */
+footer {
+  background-color: #111; /* strong contrast */
+  color: #f5f5f5;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+footer p {
+  margin: 0;
+  color: #ddd;
+}
+
+footer a {
+  color: #e10600;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
