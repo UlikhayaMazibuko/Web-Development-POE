@@ -23,11 +23,11 @@ Key Features and Functionality
 
 Timeline and Milestones
  • 27 August 2025 – Part 1 Submission: Website Project Proposal, Content Research and Sourcing, Initial HTML files, GitHub repository link.
- • 26 September 2025 – Part 2 Submission: Full content integration, CSS styling, and responsive layout.
+ • 29 September 2025 – Part 2 Submission: Full content integration, CSS styling, and responsive layout.
 
 Part 1 Details
 
-Part 1 focuses on:
+Focus:
  • Website Project Proposal 
  • Content Research and Sourcing 
  • Initial HTML file setup 
@@ -39,9 +39,26 @@ Sitemap
  3. Services & Products (services.html)
  5. Contact (contact.html)
 
+ Part 2 Details
+
+ Focus:
+
+ - CSS styling for homepage, about, services, and contact pages.
+ - Responsive layouts using Flexbox/Grid.
+ - Nav bar consistency across pages.
+ - Buttons, promotions, and services cards formatted consistently.
+ - Contact form styling and booking CTA design.
+ - Alignment of content and images across pages.
+ - NO FEEDBACK FROM PART 01 WAS RECEIVED when these changes were committed.
+
 Change Log
- • 27 August 2025: Created GitHub repository, added initial index.html and about.html.
+ • 27 August 2025: Created GitHub repository, added initial index.html, about.html, services.html and contact.html.
  • 27 August 2025: Drafted README.md.
+ • 26 September 2025: Added CCSS styling to the HTML Part 01.
 
 Reference
  • W3Schools. (2025). HTML Introduction. [online] Available at: https://www.w3schools.com/html [Accessed 25 Aug. 2025].
+ 
+ • MDN Web Docs. (2025). CSS Basics. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS [Accessed 26 Sep. 2025].
+
+ 
