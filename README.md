@@ -49,16 +49,21 @@ Sitemap
  - Buttons, promotions, and services cards formatted consistently.
  - Contact form styling and booking CTA design.
  - Alignment of content and images across pages.
- - NO FEEDBACK FROM PART 01 WAS RECEIVED when these changes were committed.
+ - FEEDBACK FROM PART 01 WAS RECEIVED LATE when these changes were committed.
 
 Change Log
  • 27 August 2025: Created GitHub repository, added initial index.html, about.html, services.html and contact.html.
  • 27 August 2025: Drafted README.md.
  • 26 September 2025: Added CCSS styling to the HTML Part 01.
+ • 28 September 2025: Edited HTML files based on feedback received from Part 01.
 
 Reference
  • W3Schools. (2025). HTML Introduction. [online] Available at: https://www.w3schools.com/html [Accessed 25 Aug. 2025].
  
  • MDN Web Docs. (2025). CSS Basics. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS [Accessed 26 Sep. 2025].
+
+ • FreeCodeCamp. (2025). Responsive Web Design Principles. [online] Available at: https://www.freecodecamp.org/learn/responsive-web-design/ [Accessed 27 Sep. 2025].
+
+ 
 
  
