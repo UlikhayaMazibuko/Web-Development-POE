@@ -51,11 +51,26 @@ Sitemap
  - Alignment of content and images across pages.
  - FEEDBACK FROM PART 01 WAS RECEIVED LATE when these changes were committed.
 
+ Responsiveness Testing  
+
+ Below are screenshots of the website tested on different devices using Chrome DevTools:  
+
+**Desktop View**  
+![Desktop Screenshot](./ResponsivenessScreenshots/desktop.png)
+
+**Tablet View (iPad)**  
+![Tablet Screenshot](./ResponsivenessScreenshots/tablet.png)  
+
+**Mobile View (iPhone 14 pro max)**  
+![Mobile Screenshot](./ResponsivessScreenshots/mobile.png)  
+
+
 Change Log
  • 27 August 2025: Created GitHub repository, added initial index.html, about.html, services.html and contact.html.
  • 27 August 2025: Drafted README.md.
  • 26 September 2025: Added CCSS styling to the HTML Part 01.
  • 28 September 2025: Edited HTML files based on feedback received from Part 01.
+ • 28 September 2025: Added screenshots based on responsive testing.
 
 Reference
  • W3Schools. (2025). HTML Introduction. [online] Available at: https://www.w3schools.com/html [Accessed 25 Aug. 2025].
