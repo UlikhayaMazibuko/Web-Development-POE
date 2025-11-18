@@ -1,0 +1,34 @@
+# robots.txt for Panto Hair & Beauty Salon
+# https://www.phbsalon.co.za/robots.txt
+
+User-agent: *
+Allow: /
+
+# Allow all essential pages
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /contact.html
+
+# Block admin or sensitive folders (if any exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /*.json$
+Disallow: /*.log$
+
+# Allow CSS and JavaScript for proper rendering
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# Sitemap location
+Sitemap: https://www.phbsalon.co.za/sitemap.xml
+
+# Crawl-delay (optional - adjust if needed)
+Crawl-delay: 1
+

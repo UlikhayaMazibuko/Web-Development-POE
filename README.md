@@ -5,6 +5,7 @@
 * **Name:** Ulikhaya Aphiwe Mazibuko
 * **Student Number:** ST10468748
 
+---
 
 ## Project Overview
 
