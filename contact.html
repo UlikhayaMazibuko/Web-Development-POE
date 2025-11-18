@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Panto Hair & Beauty Salon</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Form-specific styles */
+    .form-container {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .form-group label .required {
+      color: #e10600;
+      margin-left: 0.25rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #e10600;
+    }
+
+    .form-group input.error-field,
+    .form-group select.error-field,
+    .form-group textarea.error-field {
+      border-color: #e10600;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .error {
+      color: #e10600;
+      font-size: 0.8rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
+
+    .success-box {
+      padding: 1rem;
+      background: #e6ffe6;
+      border: 2px solid #4caf50;
+      border-radius: 8px;
+      margin-top: 1rem;
+      color: #2e7d32;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      background-color: #e10600;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-submit:hover {
+      background-color: #b00000;
+      transform: translateY(-2px);
+    }
+
+    .btn-submit:active {
+      transform: translateY(0);
+    }
+
+    .btn-submit:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    #response {
+      margin-top: 1.5rem;
+    }
+
+    .response-content {
+      padding: 1rem;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
+
+    .response-content h3 {
+      margin-top: 0;
+      color: #e10600;
+    }
+
+    .mailto-preview {
+      background-color: #f8f8f8;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      border-left: 4px solid #e10600;
+    }
+
+    .mailto-preview p {
+      margin: 0.5rem 0;
+    }
+
+    .mailto-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #e10600;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .mailto-link:hover {
+      background-color: #b00000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header role="banner">
+    <div class="container">
+      <div>
+        <a href="index.html" aria-label="Panto Hair & Beauty Salon Home">
+          <h1>Panto Hair &amp; Beauty Salon</h1>
+        </a>
+        <p>Professional Hair, Beauty &amp; Nail Services in Newcastle</p>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Our Salon</a>
+        <a href="services.html">Hair, Beauty &amp; Nail Services</a>
+        <a href="contact.html" aria-current="page">Contact &amp; Location</a>
+        <a href="contact.html#book" class="cta-trigger" title="Book an appointment at Panto Hair & Beauty Salon">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <!-- Contact Details Section -->
+      <section class="contact-details" style="margin-bottom: 2rem;">
+        <h2>Salon Information</h2>
+        <p><strong>Address:</strong> Newcastle Mall, Newcastle, KwaZulu-Natal, South Africa</p>
+        <p><strong>Phone:</strong> <a href="tel:+27630813339">+27 63 081 3339</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@phbsalon.co.za">info@phbsalon.co.za</a></p>
+        <p><strong>Hours:</strong> Mon–Sat 09:00–18:00, Sun 09:00–15:00</p>
+      </section>
+
+      <!-- Booking CTA -->
+      <div id="book" class="booking" style="margin-bottom: 2rem;">
+        <h2>Book an Appointment</h2>
+        <p>Ready for your next look? Call us, email us, or use the form below to contact us.</p>
+      </div>
+
+      <!-- Contact Form -->
+      <section class="form-container">
+        <h2>Send us a Message</h2>
+        <p>Have a question, feedback, or need support? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form id="contact-form" novalidate>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <input 
+              type="text" 
+              id="fullName" 
+              name="fullName" 
+              required 
+              minlength="2" 
+              maxlength="100"
+              pattern="^[a-zA-Z\s\-'\.]+$"
+              placeholder="Enter your full name"
+            >
+            <span class="error" id="fullName-error"></span>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              maxlength="255"
+              placeholder="your.email@example.com"
+            >
+            <span class="error" id="email-error"></span>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              required
+              pattern="^(\+27|0)[0-9]{9,10}$"
+              placeholder="+27 63 081 3339 or 063 081 3339"
+              maxlength="15"
+            >
+            <span class="error" id="phone-error"></span>
+          </div>
+
+          <!-- Subject -->
+          <div class="form-group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject...</option>
+              <option value="feedback">Feedback</option>
+              <option value="complaint">Complaint</option>
+              <option value="support">Support</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="error" id="subject-error"></span>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea 
+              id="message" 
+              name="message" 
+              required
+              minlength="10"
+              maxlength="1000"
+              placeholder="Please enter your message (10-1000 characters)"
+              rows="6"
+            ></textarea>
+            <span class="error" id="message-error"></span>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+        </form>
+
+        <!-- Response Container -->
+        <div id="response"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <section aria-label="Contact Details">
+        <h2 class="visually-hidden">Contact Details</h2>
+        <address>
+          Newcastle Mall, Newcastle, KwaZulu-Natal, South Africa<br />
+          Phone: <a href="tel:+27630813339">+27 63 081 3339</a><br />
+          Email: <a href="mailto:info@phbsalon.co.za">info@phbsalon.co.za</a><br />
+          Hours: Mon – Sat 09:00 – 18:00  Sun 09:00 – 15:00
+        </address>
+      </section>
+
+      <section aria-label="Quick Links">
+        <h2 class="visually-hidden">Quick Links</h2>
+        <ul>
+          <li><a href="services.html">Hair, Beauty &amp; Nail Services</a></li>
+          <li><a href="about.html">About Our Salon</a></li>
+          <li><a href="contact.html">Contact &amp; Location</a></li>
+          <li><a href="contact.html#book">Book Your Appointment</a></li>
+        </ul>
+      </section>
+
+      <p>&copy; <span id="year">2025</span> PHB – Panto Hair &amp; Beauty Salon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+  <script>
+    // Update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
